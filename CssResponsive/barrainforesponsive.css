@@ -1,0 +1,32 @@
+@media (max-width: 900px) {
+  .info-bar {
+    gap: 1.5rem;
+    padding: 1.2rem 0.8rem;
+  }
+
+  .info-item {
+    font-size: 0.9rem;
+    max-width: 140px;
+  }
+
+  .info-item i {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .info-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .info-item {
+    font-size: 0.85rem;
+    max-width: 100%;
+  }
+
+  .info-item i {
+    font-size: 1.6rem;
+  }
+}

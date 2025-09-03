@@ -1,0 +1,42 @@
+/* consultasresponsive.css */
+
+@media (max-width: 768px) {
+  .faq-wrapper {
+    padding: 30px 15px;
+  }
+
+  .faq-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .faq-subtitle {
+    font-size: 1rem;
+  }
+
+  .faq-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-column h3 {
+    font-size: 1.3rem;
+  }
+
+  summary {
+    font-size: 0.95rem;
+  }
+
+  details p,
+  details ul {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .faq-wrapper {
+    padding: 20px 10px;
+  }
+
+  summary::after {
+    font-size: 1rem;
+  }
+}

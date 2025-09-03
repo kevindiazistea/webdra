@@ -1,0 +1,225 @@
+@import url('nosotros.css');
+@import url('../CssResponsive/nosotrosresponsive.css');
+
+@import url('servicios.css');
+@import url('../CssResponsive/serviciosresponsive.css');
+
+@import url('consultas.css');
+@import url('../CssResponsive/consultasresponsive.css');
+
+@import url('infobar.css');
+@import url('../CssResponsive/barrainforesponsive.css');
+
+@import url('contacto.css');
+@import url('../CssResponsive/contactoresponsive.css');
+
+@import url('footer.css');
+@import url('../CssResponsive/footerresponsive.css');
+/* 🔄 Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f7f3;
+  margin: 0;
+}
+
+/* 🌐 Barra de navegación */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #30496F;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  height: 70px;
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.3));
+}
+
+.logo {
+  margin-left: 15rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links li a {
+  color: #f8f7f3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00ffd5;
+}
+
+.nav-spacer {
+  width: 50px;
+}
+
+/* 📱 Menú hamburguesa */
+.menu-toggle {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #f8f7f3;
+  z-index: 1001;
+  transition: transform 0.3s ease;
+  display: none;
+}
+
+.menu-toggle.open {
+  transform: rotate(90deg);
+}
+
+
+/* 🖼️ Hero con imagen centrada y texto encima */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  padding: 10rem 2rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.spacer {
+  height: 40px;
+  background: #e4dbd6;
+}
+
+
+
+/* 🧴 Servicios */
+.services {
+  padding: 3rem 1rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #6a1b9a;
+}
+
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.service-item {
+  width: 100%;
+  max-width: 320px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(197, 12, 12, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.service-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.service-item p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #8e24aa;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #6a1b9a;
+}
+
+form button {
+  background-color: #c59fcf;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #a47bb5;
+}
+

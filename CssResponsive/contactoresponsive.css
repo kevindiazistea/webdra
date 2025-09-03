@@ -1,0 +1,65 @@
+@media (max-width: 900px) {
+  .contacto {
+    grid-template-columns: 1fr;
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  .contacto-info h2,
+  .contacto-formulario h3 {
+    font-size: 1.4rem;
+  }
+
+  .contacto-info p {
+    font-size: 1rem;
+  }
+
+  .whatsapp-btn {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+
+  .contacto-formulario input,
+  .contacto-formulario textarea {
+    font-size: 0.95rem;
+  }
+
+  .contacto-formulario button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .contacto-mapa iframe {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contacto-info h2,
+  .contacto-formulario h3 {
+    font-size: 1.2rem;
+  }
+
+  .contacto-info p {
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .contacto-formulario input,
+  .contacto-formulario textarea {
+    font-size: 0.9rem;
+  }
+
+  .contacto-formulario button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .contacto-mapa iframe {
+    min-height: 250px;
+  }
+}

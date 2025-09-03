@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dra Andry González</title>
+  <link rel="stylesheet" href="Css/estilos.css" />
+  <link rel="stylesheet" href="Css/resposive.css">
+</head>
+<body>
+
+  <!-- 🌐 Barra de navegación -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="Imagenes/PRUEBA123.png" alt="Logo" />
+    </div>
+    <div class="menu-toggle">☰</div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#consultas">Preguntas frecuentes</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <div class="nav-spacer"></div>
+  </nav>
+
+  <!-- 📸 Imagen principal -->
+  <div id="inicio"></div>
+  <section class="hero">
+    <img src="Imagenes/fondo.jpeg" alt="Foto principal" class="hero-img">
+    <div class="hero-text">
+      <h1>Dra Andry González</h1>
+      <p>Medicina Estética</p>
+    </div>
+  </section>
+  <div class="spacer"></div>
+
+  <!-- 🧑‍⚕️ Nosotros -->
+  <div id="nosotros"></div>
+  <script>
+    fetch('webs/nosotros.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('nosotros').innerHTML = html;
+        activarAnimaciones();
+      });
+  </script>
+
+  <!-- 🔹 Barra info debajo de 'nosotros' -->
+  <div class="barrainfo"></div>
+
+  <!-- 💆 Servicios -->
+  <div id="servicios"></div>
+  <script>
+    fetch('webs/servicios.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('servicios').innerHTML = html;
+        activarAnimaciones();
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = "Css/CssResponsive/serviciosresponsive.css";
+        document.head.appendChild(link);
+      });
+  </script>
+
+  <!-- ❓ Consultas -->
+  <div id="consultas"></div>
+  <script>
+    fetch('webs/consultas.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('consultas').innerHTML = html;
+        activarAnimaciones();
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = "CssResponsive/serviciosresponsive.css";
+        document.head.appendChild(link);
+      });
+  </script>
+
+  <!-- 🔹 Barra info arriba de 'contacto' -->
+  <div class="barrainfo"></div>
+
+  <!-- 📞 Contacto -->
+  <div id="contacto"></div>
+  <script>
+    fetch('webs/contacto.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('contacto').innerHTML = html;
+        activarAnimaciones();
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = "CssResponsive/contactoresponsive.css";
+        document.head.appendChild(link);
+      });
+  </script>
+
+  <!-- 🧭 Footer -->
+  <div id="footer"></div>
+  <script>
+    fetch('webs/footer.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+        activarAnimaciones();
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = "CssResponsive/footerresponsive.css";
+        document.head.appendChild(link);
+      });
+  </script>
+
+  <!-- 🔁 Cargar barrainfo en ambas instancias -->
+  <script>
+    document.querySelectorAll('.barrainfo').forEach(container => {
+      fetch('webs/barrainfo.html')
+        .then(res => res.text())
+        .then(html => {
+          container.innerHTML = html;
+
+          // Solo carga el CSS una vez
+          if (!document.querySelector('link[href="CssResponsive/barrainforesponsive.css"]')) {
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = "CssResponsive/barrainforesponsive.css";
+            document.head.appendChild(link);
+          }
+
+          // Si no necesitás animaciones, podés comentar esto
+          // activarAnimaciones();
+        });
+    });
+  </script>
+
+  <!-- 📜 Scripts generales -->
+  <script src="scripts/script.js"></script>
+  <script src="scripts/modal-services.js"></script>
+
+</body>
+</html>
