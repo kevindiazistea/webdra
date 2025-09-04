@@ -22,31 +22,49 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.contacto-info h2 {
+.contacto-subtitulo {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.contacto-titulo {
   font-size: 2rem;
-  margin-bottom: 20px;
   color: #005a8d;
+  margin-bottom: 16px;
 }
 
 .contacto-info p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   margin: 10px 0;
+  line-height: 1.6;
 }
 
-.whatsapp-btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 16px;
-  background-color: #25D366;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background 0.3s ease;
+.contacto-info strong {
+  color: #555;
 }
 
-.whatsapp-btn:hover {
-  background-color: #1ebe5d;
+.contacto-info a {
+  color: #005a8d;
+  text-decoration: underline;
+}
+
+/* Íconos sociales */
+.contacto-iconos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.contacto-iconos a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+.contacto-iconos a:hover img {
+  transform: scale(1.1);
 }
 
 /* Mapa */
@@ -68,45 +86,4 @@
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* Formulario */
-.contacto-formulario {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.contacto-formulario h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #005a8d;
-}
-
-.contacto-formulario input,
-.contacto-formulario textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.contacto-formulario button {
-  padding: 12px;
-  background-color: #005a8d;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.contacto-formulario button:hover {
-  background-color: #003f66;
 }

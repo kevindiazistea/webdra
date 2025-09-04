@@ -1,34 +1,38 @@
 <section class="contacto">
   <div class="contacto-info">
-    <h2>Contáctanos</h2>
+    <h3 class="contacto-subtitulo">¿Cómo podemos ayudarte?</h3>
+    <h2 class="contacto-titulo">Contáctanos</h2>
+    <p>Estamos aquí para ayudarte y responder cualquier pregunta que tengas.</p>
+
+    <p><strong>Dirección:</strong> Cúcuta, Colombia</p>
     <p><strong>Teléfono:</strong> +57 310 211-8677</p>
-    <p><strong>Ciudad:</strong> Cúcuta, Colombia</p>
-    <p><strong>Email:</strong> draandrygonzalez@gmail.com </p>
+    <p><strong>Email:</strong>
+      <a href="mailto:draandrygonzalez@gmail.com">draandrygonzalez@gmail.com</a>
+    </p>
     <p><strong>Horarios:</strong><br>
       Lunes a Viernes: 9:00 – 18:00<br>
       Sábados: 9:00 – 13:00
     </p>
-    <a href="https://wa.me/573102118677" target="_blank" class="whatsapp-btn">
-      💬 Consultar por WhatsApp
-    </a>
+
+    <div class="contacto-iconos">
+      <a href="https://wa.me/573102118677" target="_blank" title="WhatsApp">
+        <img src="icon-whatsapp.svg" alt="WhatsApp">
+      </a>
+      <a href="https://www.instagram.com/tuusuario" target="_blank" title="Instagram">
+        <img src="icon-instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@tuusuario" target="_blank" title="TikTok">
+        <img src="icon-tiktok.svg" alt="TikTok">
+      </a>
+    </div>
   </div>
 
   <div class="contacto-mapa">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1661.67614205592!2d-72.4987792783771!3d7.8789315755545655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e66458b8d2b828f%3A0x688a3d915d35ebb0!2sCruz%20Verde%20Avenida%201!5e0!3m2!1ses-419!2sar!4v1756856613579!5m2!1ses-419!2sar"
-      width="100%"
-      height="100%"
-      style="min-height: 400px; border: 0; border-radius: 12px;"
-      allowfullscreen=""
-      loading="lazy">
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1646.1915263616215!2d-72.49316612894367!3d7.908790572390944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e66459c645dd28b%3A0x26736c1ff4db5caa!2sC%C3%BAcuta%2C%20Norte%20de%20Santander%2C%20Colombia!5e0!3m2!1ses-419!2sar!4v1757026659168!5m2!1ses-419!2sar"
+      loading="lazy"
+      allowfullscreen
+      style="width: 100%; height: 100%; border: 0; border-radius: 12px;">
     </iframe>
   </div>
-
-  <form class="contacto-formulario" action="mailto:contacto@mail.com" method="POST" enctype="text/plain">
-    <h3>Envíanos tu consulta</h3>
-    <input type="text" name="nombre" placeholder="Tu nombre" required>
-    <input type="email" name="email" placeholder="Tu email" required>
-    <textarea name="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
 </section>
