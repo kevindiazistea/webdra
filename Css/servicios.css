@@ -1,8 +1,8 @@
-/* Galería de servicios */
+/* Galería */
 .toxinas-galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
   padding: 40px 20px;
   background-color: #fefefe;
 }
@@ -11,8 +11,8 @@
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.6s ease forwards;
@@ -20,16 +20,16 @@
 }
 
 .toxina-item:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
-.service-item img {
+.toxina-item img {
   width: 100%;
-  height: 200px; /* o el alto que prefieras */
+  aspect-ratio: 4/3;
   object-fit: cover;
   border-radius: 8px;
 }
-
 
 .toxina-item h3 {
   position: absolute;
@@ -44,12 +44,6 @@
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-}
-
-.toxina-item a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
 }
 
 /* Encabezado */
@@ -101,10 +95,6 @@
   pointer-events: auto;
 }
 
-.modal.closing {
-  opacity: 0;
-}
-
 .modal-content {
   background: #fff;
   padding: 2rem;
@@ -115,16 +105,6 @@
   position: relative;
 }
 
-/* Entrada */
-.modal.active .modal-content {
-  animation: slideUp 0.4s ease forwards;
-}
-
-/* Salida */
-.modal.closing .modal-content {
-  animation: slideDown 0.3s ease forwards;
-}
-
 .modal-close {
   position: absolute;
   top: 10px;
@@ -133,24 +113,6 @@
   font-weight: bold;
   color: #333;
   cursor: pointer;
-  z-index: 1001;
-}
-
-.modal-btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #0077cc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-
-.modal-btn:hover {
-  background-color: #005fa3;
 }
 
 .modal-preview {
@@ -174,6 +136,7 @@
   text-decoration: none;
   transition: background-color 0.3s ease;
   margin-top: 12px;
+  flex-shrink: 0;
 }
 
 .instagram-pill-btn:hover {
@@ -186,6 +149,7 @@
   font-style: italic;
   color: #555;
   text-align: center;
+  flex-shrink: 0;
 }
 
 /* Animaciones */
@@ -195,26 +159,3 @@
     transform: translateY(0);
   }
 }
-
-@keyframes slideUp {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideDown {
-  from {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-}
-

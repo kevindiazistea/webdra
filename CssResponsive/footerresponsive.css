@@ -25,36 +25,44 @@
     border-radius: 6px;
   }
 
-  .scroll-up {
-    position: static;
-    margin-top: 20px;
-    display: inline-block;
+  .scroll-footer {
+    justify-content: flex-end;
+    margin-top: 24px;
   }
 
-  .scroll-up svg {
-    width: 44px;
-    height: 44px;
-    padding: 8px;
+  .scroll-up-footer {
+    padding: 12px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .scroll-up-footer svg {
+    width: 28px;
+    height: 28px;
   }
 }
+
 @media (max-width: 768px) {
-  .scroll-up {
-    display: block;
-    position: relative;
-    margin: 20px auto;
-    text-align: center;
+  .scroll-footer {
+    justify-content: center;
+    margin-top: 20px;
   }
 
-  .scroll-up svg {
-    width: 36px;
-    height: 36px;
+  .scroll-up-footer {
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+  }
+
+  .scroll-up-footer svg {
+    width: 26px;
+    height: 26px;
   }
 }
 
-
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .footer-content h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .footer-content p,
@@ -67,9 +75,41 @@
     padding: 0.5rem 0.8rem;
   }
 
-  .scroll-up svg {
+  .scroll-footer {
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .scroll-up-footer {
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+  }
+
+  .scroll-up-footer svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content h4 {
+    font-size: 1rem;
+  }
+
+  .footer-content p,
+  .footer-copy {
+    font-size: 0.8rem;
+  }
+
+  .scroll-up-footer {
     width: 40px;
     height: 40px;
     padding: 6px;
+  }
+
+  .scroll-up-footer svg {
+    width: 22px;
+    height: 22px;
   }
 }

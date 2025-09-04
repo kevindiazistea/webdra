@@ -52,26 +52,63 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 🔼 Flecha actualizada */
 .scroll-up {
-  position: absolute;
-  bottom: 60px; /* antes estaba en 20px */
+  position: fixed;
+  bottom: 20px;
   right: 20px;
+  z-index: 1000;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   transition: transform 0.3s ease;
-  z-index: 10;
 }
 
 .scroll-up:hover {
-  transform: translateY(-5px);
+  transform: scale(1.1);
 }
 
 .scroll-up svg {
-  width: 48px;
-  height: 48px;
-  background-color: #ffffff33;
-  border-radius: 50%;
-  padding: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  fill: white;
-  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  fill: #333;
 }
+.scroll-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+  position: relative;
+}
+
+.scroll-up-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px; /* eleva la flecha dentro del footer */
+  right: 0;
+}
+
+.scroll-up-footer:hover {
+  transform: translateY(-4px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.scroll-up-footer svg {
+  width: 28px;
+  height: 28px;
+  fill: white;
+}
+
+

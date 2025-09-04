@@ -1,43 +1,21 @@
 @media (max-width: 900px) {
-  .servicios-grid {
+  .toxinas-galeria {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 1rem;
   }
 
-  .servicio-card {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    padding: 1rem;
-    text-align: center;
-  }
-
-  .servicio-card img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-
-  .servicio-card h4 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .servicio-card p {
+  .toxina-item h3 {
     font-size: 0.95rem;
-    line-height: 1.6;
-    color: #444;
+    padding: 10px;
   }
 
-  .servicio-card button {
-    font-size: 0.9rem;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
+  .toxina-item img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .modal {
     align-items: flex-end;
@@ -54,16 +32,21 @@
     left: 0;
     padding: 1.5rem 1rem;
     box-sizing: border-box;
-  }
+   max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
-  .modal-preview {
-    max-height: 200px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-  }
+.modal-preview {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
 
-  .modal-btn,
+
   .instagram-pill-btn {
     font-size: 0.9rem;
     padding: 10px;
@@ -78,16 +61,6 @@
     top: 8px;
     right: 12px;
     font-size: 1.2rem;
-  }
-
-  .toxina-item img {
-    height: 180px;
-    object-fit: cover;
-  }
-
-  .toxina-item h3 {
-    font-size: 0.9rem;
-    padding: 10px;
   }
 }
 

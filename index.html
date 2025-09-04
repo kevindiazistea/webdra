@@ -54,15 +54,26 @@
   <div id="servicios"></div>
   <script>
     fetch('webs/servicios.html')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById('servicios').innerHTML = html;
-        activarAnimaciones();
-        const link = document.createElement("link");
-        link.rel = "stylesheet";
-        link.href = "Css/CssResponsive/serviciosresponsive.css";
-        document.head.appendChild(link);
-      });
+  .then(res => res.text())
+  .then(html => {
+    const contenedor = document.getElementById('servicios');
+    contenedor.innerHTML = html;
+
+    // Esperar al siguiente ciclo de render para asegurar que el DOM esté listo
+    requestAnimationFrame(() => {
+      activarAnimaciones();
+      inicializarModalEventos(); // ✅ Ahora sí, seguro que los elementos existen
+    });
+
+    // Inyectar CSS responsivo si no está
+    if (!document.querySelector('link[href="Css/CssResponsive/serviciosresponsive.css"]')) {
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "Css/CssResponsive/serviciosresponsive.css";
+      document.head.appendChild(link);
+    }
+  });
+
   </script>
 
   <!-- ❓ Consultas -->

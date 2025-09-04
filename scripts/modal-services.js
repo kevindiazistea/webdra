@@ -18,26 +18,23 @@ function cerrarModal() {
   }, 300);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+// ✅ Esta función se llama después del fetch
+function inicializarModalEventos() {
   const modal = document.getElementById("modal-servicio");
   const closeBtn = document.querySelector(".modal-close");
 
   if (!modal || !closeBtn) return;
 
-  // Botón de cierre
   closeBtn.addEventListener("click", cerrarModal);
 
-  // Cierre al hacer clic fuera del contenido
   window.addEventListener("click", (e) => {
     if (e.target === modal) cerrarModal();
   });
 
-  // Cierre con tecla Escape
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") cerrarModal();
   });
 
-  // Swipe para cerrar en móviles
   let startY = 0;
   let endY = 0;
 
@@ -55,4 +52,4 @@ document.addEventListener("DOMContentLoaded", () => {
     startY = 0;
     endY = 0;
   });
-});
+}
