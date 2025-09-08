@@ -2,15 +2,19 @@
   .footer {
     padding: 20px 15px;
     text-align: center;
+    background-color: var(--color-primario);
+    color: var(--color-fondo-claro);
   }
 
   .footer-content h4 {
     font-size: 1.2rem;
+    color: var(--color-fondo-claro);
   }
 
   .footer-content p,
   .footer-copy {
     font-size: 0.9rem;
+    color: var(--color-texto-suave);
   }
 
   .footer-social {
@@ -23,6 +27,12 @@
     font-size: 0.95rem;
     padding: 0.6rem 1rem;
     border-radius: 6px;
+    background-color: rgba(255,255,255,0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  .social-icon:hover {
+    background-color: rgba(255,255,255,0.2);
   }
 
   .scroll-footer {

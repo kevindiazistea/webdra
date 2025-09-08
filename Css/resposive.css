@@ -1,6 +1,23 @@
-/* 📱 Responsive */
+/* 🔒 Prevención global de scroll horizontal */
+html, body {
+  overflow-x: hidden;
+}
+
+/* 📱 Navbar */
 @media (max-width: 768px) {
-   .menu-toggle {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .menu-toggle {
     display: block;
     position: absolute;
     top: 1rem;
@@ -13,9 +30,10 @@
     flex-direction: column;
     position: absolute;
     top: 70px;
-    right: 0;
+    left: 0;
     width: 100%;
-    background-color: #30496F;
+    background-color: rgba(48, 73, 111, 0.95);
+    backdrop-filter: blur(4px);
     padding: 1rem 2rem;
     z-index: 1000;
     transform: translateY(-20px);
@@ -29,8 +47,39 @@
     opacity: 1;
   }
 
+  .nav-links li a {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+}
+
+/* 🖼️ Hero */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .hero-text {
+    position: static;
+    transform: none;
+    background: none;
+    padding: 1rem;
+    color: var(--color-primario);
+  }
+
   .hero-text h1 {
     font-size: 2.2rem;
+    margin-bottom: 0.5rem;
   }
 
   .hero-text p {
@@ -38,45 +87,32 @@
   }
 }
 
-/* Hero */
-.hero-text {
-  padding: 6rem 1rem;
+/* 📦 Espaciado entre secciones */
+section {
+  padding: 2rem 1rem;
+  scroll-margin-top: 80px;
 }
 
-.hero-text h1 {
-  font-size: 2rem;
-}
-
-.hero-text p {
-  font-size: 1rem;
-}
-
-/* Info-bar */
-.info-bar {
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 1rem;
-}
-
-.info-item {
+img {
   max-width: 100%;
-  font-size: 0.9rem;
+  height: auto;
 }
 
-/* Servicios */
-.service-grid {
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 1rem;
+/* 🧴 Servicios */
+@media (max-width: 768px) {
+  .service-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .service-item {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 
-.service-item {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-/* Formularios y botones */
+/* 📞 Formularios */
 form {
   padding: 1rem;
 }
@@ -86,37 +122,11 @@ form button {
   font-size: 1rem;
 }
 
-/* Footer (si lo tenés modularizado) */
-.footer {
-  flex-direction: column;
-  text-align: center;
-  padding: 1rem;
-}
-
-section {
-  padding: 2rem 1rem;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-  .navbar {
-    position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    margin-left: 0;
-  }
-
-
-  /*footer*/
-  @media (max-width: 768px) {
+/* 🧭 Footer */
+@media (max-width: 768px) {
   .footer {
+    flex-direction: column;
+    text-align: center;
     padding: 20px 15px;
   }
 
@@ -171,16 +181,13 @@ img {
   }
 }
 
-/* 📱 nosotros */
-
+/* 📱 Nosotros */
 @media (max-width: 768px) {
   .nosotros {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 100px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 100px 1rem 0 1rem;
     gap: 2rem;
     height: auto;
   }

@@ -1,37 +1,55 @@
 @media (max-width: 900px) {
   .contacto {
-    grid-template-columns: 1fr;
     padding: 30px 15px;
+    background-color: var(--color-fondo-claro);
+  }
+
+  .contacto-grid {
+    grid-template-columns: 1fr; /* apila contacto y mapa */
     gap: 20px;
   }
 
   .contacto-subtitulo {
     font-size: 1.1rem;
     margin-bottom: 6px;
+    color: var(--color-texto-suave);
   }
 
   .contacto-titulo {
     font-size: 1.6rem;
     margin-bottom: 16px;
+    color: var(--color-primario);
   }
 
   .contacto-info p {
     font-size: 1rem;
+    color: #444;
   }
 
   .contacto-iconos {
     justify-content: center;
     margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .btn-red-social {
+    width: 100%;
+    max-width: 280px;
   }
 
   .contacto-mapa iframe {
     min-height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   }
 }
 
 @media (max-width: 500px) {
   .contacto {
     padding: 20px 12px;
+  }
+
+  .contacto-grid {
     gap: 16px;
   }
 
@@ -49,6 +67,11 @@
 
   .contacto-iconos {
     gap: 16px;
+  }
+
+  .btn-red-social {
+    font-size: 0.9rem;
+    height: 44px;
   }
 
   .contacto-iconos a img {

@@ -1,33 +1,41 @@
-/* consultasresponsive.css */
-
 @media (max-width: 768px) {
   .faq-wrapper {
     padding: 30px 15px;
+    background-color: var(--color-fondo-claro);
   }
 
   .faq-header h2 {
     font-size: 1.6rem;
+    color: var(--color-primario);
   }
 
   .faq-subtitle {
     font-size: 1rem;
+    color: var(--color-texto-suave);
+    padding: 0 1rem;
+    text-align: center;
   }
 
   .faq-columns {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .faq-column h3 {
     font-size: 1.3rem;
+    color: var(--color-secundario);
+    text-align: center;
   }
 
   summary {
     font-size: 0.95rem;
+    color: var(--color-primario);
   }
 
   details p,
   details ul {
     font-size: 0.9rem;
+    color: #444;
   }
 }
 

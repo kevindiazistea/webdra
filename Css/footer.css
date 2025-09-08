@@ -1,10 +1,10 @@
 .footer {
-  background-color: #005a8d;
-  color: white;
+  background-color: var(--color-primario);
+  color: var(--color-fondo-claro);
   padding: 30px 20px;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
-  position: relative; /* necesario para posicionar la flecha */
+  position: relative;
 }
 
 .footer-content {
@@ -15,11 +15,13 @@
 .footer h4 {
   font-size: 1.4rem;
   margin-bottom: 10px;
+  color: var(--color-fondo-claro);
 }
 
 .footer p {
   margin: 8px 0;
   font-size: 1rem;
+  color: var(--color-texto-suave);
 }
 
 .footer-social {
@@ -32,7 +34,7 @@
 
 .social-icon {
   text-decoration: none;
-  color: white;
+  color: var(--color-fondo-claro);
   font-weight: bold;
   font-size: 1rem;
   transition: opacity 0.3s ease;
@@ -46,18 +48,20 @@
   margin-top: 20px;
   font-size: 0.9rem;
   opacity: 0.8;
+  color: var(--color-fondo-alt);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+/* Flecha flotante */
 .scroll-up {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  background-color: #fff;
+  background-color: var(--color-fondo-claro);
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   width: 48px;
@@ -76,8 +80,10 @@ html {
 .scroll-up svg {
   width: 24px;
   height: 24px;
-  fill: #333;
+  fill: var(--color-primario);
 }
+
+/* Flecha dentro del footer */
 .scroll-footer {
   display: flex;
   justify-content: flex-end;
@@ -96,7 +102,7 @@ html {
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 20px; /* eleva la flecha dentro del footer */
+  bottom: 20px;
   right: 0;
 }
 
@@ -108,7 +114,5 @@ html {
 .scroll-up-footer svg {
   width: 28px;
   height: 28px;
-  fill: white;
+  fill: var(--color-fondo-claro);
 }
-
-

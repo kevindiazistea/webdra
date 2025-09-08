@@ -1,0 +1,67 @@
+/* 📱 Estilos para tablets */
+@media (max-width: 1024px) {
+  .nosotros {
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .nosotros-img img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .nosotros-texto {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .nosotros-texto h2 {
+    font-size: 1.8rem;
+  }
+
+  .nosotros-texto h3 {
+    font-size: 1.2rem;
+  }
+
+  .nosotros-texto p {
+    font-size: 1rem;
+  }
+
+  .info-bar {
+    margin: 2rem 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* 📱 Estilos para celulares */
+@media (max-width: 768px) {
+  .nosotros {
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1.5rem;
+  }
+
+  .nosotros-texto h2 {
+    font-size: 1.6rem;
+  }
+
+  .nosotros-texto h3 {
+    font-size: 1.1rem;
+  }
+
+  .nosotros-texto p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .info-bar {
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1.5rem 1rem;
+  }
+}

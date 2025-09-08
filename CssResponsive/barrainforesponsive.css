@@ -2,15 +2,19 @@
   .info-bar {
     gap: 1.5rem;
     padding: 1.2rem 0.8rem;
+    background-color: var(--color-secundario);
+    color: var(--color-fondo-claro);
   }
 
   .info-item {
     font-size: 0.9rem;
     max-width: 140px;
+    color: var(--color-fondo-claro);
   }
 
   .info-item i {
     font-size: 1.8rem;
+    color: var(--color-fondo-claro);
   }
 }
 
@@ -19,11 +23,13 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    padding: 1rem;
   }
 
   .info-item {
     font-size: 0.85rem;
     max-width: 100%;
+    text-align: center;
   }
 
   .info-item i {

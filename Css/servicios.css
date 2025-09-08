@@ -4,7 +4,7 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
   padding: 40px 20px;
-  background-color: #fefefe;
+  background-color: var(--color-fondo-claro);
 }
 
 .toxina-item {
@@ -55,7 +55,7 @@
 .servicios-header h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #333;
+  color: var(--color-primario);
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -67,7 +67,7 @@
   display: block;
   width: 60px;
   height: 4px;
-  background-color: #ccc;
+  background-color: var(--color-acento-calido);
   margin: 12px auto 0;
   border-radius: 2px;
 }
@@ -96,7 +96,7 @@
 }
 
 .modal-content {
-  background: #fff;
+  background: var(--color-fondo-claro);
   padding: 2rem;
   border-radius: 8px;
   max-width: 500px;
@@ -111,7 +111,7 @@
   right: 15px;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: var(--color-primario);
   cursor: pointer;
 }
 
@@ -127,7 +127,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #30496F;
+  background-color: var(--color-primario);
   color: #fff;
   font-size: 0.9rem;
   font-weight: 600;
@@ -140,14 +140,14 @@
 }
 
 .instagram-pill-btn:hover {
-  background-color: #c1275b;
+  background-color: var(--color-secundario);
 }
 
 .modal-frase {
   margin-top: 12px;
   font-size: 1rem;
   font-style: italic;
-  color: #555;
+  color: var(--color-texto-suave);
   text-align: center;
   flex-shrink: 0;
 }
