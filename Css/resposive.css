@@ -17,12 +17,22 @@ html, body {
     margin-left: 0;
   }
 
+  .navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
   .menu-toggle {
     display: block;
-    position: absolute;
+    position: static;
     top: 1rem;
     right: 1.5rem;
     z-index: 1001;
+    font-size: 1.8rem;
+    cursor: pointer;
+
   }
 
   .nav-links {
@@ -54,7 +64,6 @@ html, body {
 }
 
 /* 🖼️ Hero */
-@media (max-width: 768px) {
   .hero {
     flex-direction: column;
     height: auto;
@@ -85,104 +94,7 @@ html, body {
   .hero-text p {
     font-size: 1.1rem;
   }
-}
-
-/* 📦 Espaciado entre secciones */
-section {
-  padding: 2rem 1rem;
-  scroll-margin-top: 80px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* 🧴 Servicios */
-@media (max-width: 768px) {
-  .service-grid {
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-
-  .service-item {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-}
-
-/* 📞 Formularios */
-form {
-  padding: 1rem;
-}
-
-form button {
-  width: 100%;
-  font-size: 1rem;
-}
-
-/* 🧭 Footer */
-@media (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 15px;
-  }
-
-  .footer h4 {
-    font-size: 1.2rem;
-  }
-
-  .footer p,
-  .social-icon {
-    font-size: 0.95rem;
-  }
-
-  .footer-social {
-    gap: 12px;
-  }
-
-  .footer-copy {
-    font-size: 0.85rem;
-  }
-
-  .scroll-up {
-    bottom: 40px;
-    right: 15px;
-  }
-
-  .scroll-up svg {
-    width: 40px;
-    height: 40px;
-    padding: 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer h4 {
-    font-size: 1rem;
-  }
-
-  .footer p,
-  .social-icon {
-    font-size: 0.9rem;
-  }
-
-  .scroll-up {
-    bottom: 30px;
-    right: 10px;
-  }
-
-  .scroll-up svg {
-    width: 36px;
-    height: 36px;
-    padding: 6px;
-  }
-}
-
 /* 📱 Nosotros */
-@media (max-width: 768px) {
   .nosotros {
     flex-direction: column;
     align-items: center;
@@ -226,4 +138,95 @@ form button {
     opacity: 1;
     transition: none;
   }
+
+/* 📦 Espaciado entre secciones */
+section {
+  padding: 2rem 1rem;
+  scroll-margin-top: 80px;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 🧴 Servicios */
+  .service-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .service-item {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+
+/* 📞 Formularios */
+form {
+  padding: 1rem;
+}
+
+form button {
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* 🧭 Footer */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .footer h4 {
+    font-size: 1.2rem;
+  }
+
+  .footer p,
+  .social-icon {
+    font-size: 0.95rem;
+  }
+
+  .footer-social {
+    gap: 12px;
+  }
+
+  .footer-copy {
+    font-size: 0.85rem;
+  }
+
+  .scroll-up {
+    bottom: 40px;
+    right: 15px;
+  }
+
+  .scroll-up svg {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+
+@media (max-width: 480px) {
+  .footer h4 {
+    font-size: 1rem;
+  }
+
+  .footer p,
+  .social-icon {
+    font-size: 0.9rem;
+  }
+
+  .scroll-up {
+    bottom: 30px;
+    right: 10px;
+  }
+
+  .scroll-up svg {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+  }
+}
+

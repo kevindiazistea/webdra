@@ -27,3 +27,16 @@ function activarAnimaciones() {
     observer.observe(el);
   });
 }
+
+document.addEventListener('click', function (e) {
+  const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  const clickedInsideMenu = navLinks.contains(e.target);
+  const clickedToggle = toggle.contains(e.target);
+
+  if (!clickedInsideMenu && !clickedToggle) {
+    navLinks.classList.remove('active');
+    toggle.classList.remove('open');
+  }
+});
