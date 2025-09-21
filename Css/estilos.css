@@ -103,7 +103,7 @@ body {
   transform: rotate(90deg);
 }
 
-/* 🖼️ Hero */
+/* 🖼️ Hero 
 .hero {
   position: relative;
   width: 100%;
@@ -147,6 +147,45 @@ body {
 .hero-text p {
   font-size: 1.4rem;
   font-style: italic;
+} probanod uno nuevo*/
+
+/* 🖼️ Hero */
+.hero {
+  width: 100%;
+  padding: 100px 2rem 60px 2rem;
+  background-color: var(--color-fondo-claro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.hero-img {
+  width: 420px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+  max-width: 600px;
+  color: var(--color-primario);
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--color-secundario);
 }
 
 .spacer {
