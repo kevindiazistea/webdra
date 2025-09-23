@@ -2,7 +2,7 @@
 @media (max-width: 1024px) {
   .nosotros {
     flex-direction: column;
-    padding-top: 4rem;
+    padding-top: 0rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     gap: 2rem;
@@ -40,7 +40,7 @@
 /* 📱 Estilos para celulares */
 @media (max-width: 768px) {
   .nosotros {
-    padding-top: 3rem;
+    padding-top: 0rem;
     padding-left: 1rem;
     padding-right: 1rem;
     gap: 1.5rem;

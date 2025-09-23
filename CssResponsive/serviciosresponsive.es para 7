@@ -1,0 +1,142 @@
+@media (max-width: 900px) {
+  .toxinas-galeria {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .toxina-item h3 {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .toxina-item img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .modal-content {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--color-fondo-claro);
+  }
+
+  .modal-preview {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .instagram-pill-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .modal-frase {
+    font-size: 0.95rem;
+    padding: 0 8px;
+    color: var(--color-texto-suave);
+  }
+
+  .modal-close {
+    top: 8px;
+    right: 12px;
+    font-size: 1.2rem;
+    color: var(--color-primario);
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .faq-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .faq-subtitle {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    padding: 0 10px;
+    line-height: 1.6;
+  }
+
+  .faq-column h3 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  details {
+    padding: 12px 15px;
+    margin-bottom: 18px;
+  }
+
+  details ul {
+    margin-top: 12px;
+    font-size: 0.9rem;
+  }
+
+  .faq-columns {
+    gap: 25px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .toxinas-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .toxina-item {
+    text-align: center;
+  }
+
+  .toxina-item img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .toxina-item h3 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+  .toxinas-galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .toxina-item:last-child {
+    grid-column: 1 / span 2; /* Ocupa ambas columnas */
+    justify-self: center;
+    max-width: 400px; /* Opcional, para que no se estire demasiado */
+  }
+}

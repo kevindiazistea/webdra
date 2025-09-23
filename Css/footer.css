@@ -1,3 +1,4 @@
+/* Footer base */
 .footer {
   background-color: var(--color-primario);
   color: var(--color-fondo-claro);
@@ -22,9 +23,24 @@
   margin: 8px 0;
   font-size: 1rem;
   color: var(--color-texto-suave);
-    text-decoration: none;
+  text-decoration: none;
 }
 
+/* Íconos con texto (teléfono, etc.) */
+.footer-content p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-content p a:hover {
+  color: var(--color-acento-frio);
+}
+
+/* Íconos visuales */
 .footer-social {
   margin: 15px 0;
   display: flex;
@@ -33,30 +49,34 @@
   flex-wrap: wrap;
 }
 
-.footer-content p a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.footer-content p a:hover {
-  color: var(--color-acento-frio); /* o el color que prefieras para hover */
-}
-
-
 .social-icon {
-  text-decoration: none;
-  color: var(--color-fondo-claro);
-  font-weight: bold;
-  font-size: 1rem;
-  transition: opacity 0.3s ease;
+  display: inline-block;
+  margin: 0 8px;
+  transition: transform 0.3s ease;
 }
 
-.social-icon:hover {
-  opacity: 0.7;
+/* Íconos como imágenes */
+.social-icon img,
+.icon-inline {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+/* Íconos con texto alineado */
+.icon-inline {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Hover táctil */
+.social-icon:hover img,
+.social-icon:hover .icon-inline {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Copyleft */
 .footer-copy {
   margin-top: 20px;
   font-size: 0.9rem;
@@ -64,6 +84,7 @@
   color: var(--color-fondo-alt);
 }
 
+/* Scroll suave */
 html {
   scroll-behavior: smooth;
 }

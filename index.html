@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <!-- 🌐 Barra de navegación -->
+  <!-- Barra de navegación -->
 <nav class="navbar">
   <div class="navbar-top">
     <div class="logo">
@@ -28,7 +28,7 @@
     <div class="nav-spacer"></div>
   </nav>
 
-  <!-- 📸 Imagen principal -->
+  <!-- Imagen principal -->
   <div id="inicio"></div>
   <section class="hero">
     <img src="Imagenes/fondo.jpeg" alt="Foto principal" class="hero-img">
@@ -37,9 +37,10 @@
       <p>Medicina Estética</p>
     </div>
   </section>
+
   <div class="spacer"></div>
 
-  <!-- 🧑‍⚕️ Nosotros -->
+  <!-- Nosotros -->
   <div id="nosotros"></div>
   <script>
     fetch('webs/nosotros.html')
@@ -50,7 +51,7 @@
       });
   </script>
 
-  <!-- 🔹 Barra info debajo de 'nosotros' -->
+  <!-- Barra info debajo de 'nosotros' -->
   <div class="barrainfo"></div>
 
   <!-- 💆 Servicios -->
@@ -61,14 +62,10 @@
   .then(html => {
     const contenedor = document.getElementById('servicios');
     contenedor.innerHTML = html;
-
-    // Esperar al siguiente ciclo de render para asegurar que el DOM esté listo
     requestAnimationFrame(() => {
       activarAnimaciones();
-      inicializarModalEventos(); // ✅ Ahora sí, seguro que los elementos existen
+      inicializarModalEventos(); // 
     });
-
-    // Inyectar CSS responsivo si no está
     if (!document.querySelector('link[href="CssResponsive/serviciosresponsive.css"]')) {
       const link = document.createElement("link");
       link.rel = "stylesheet";
@@ -79,7 +76,7 @@
 
   </script>
 
-  <!-- ❓ Consultas -->
+  <!-- Consultas -->
   <div id="consultas"></div>
   <script>
     fetch('webs/consultas.html')
@@ -94,7 +91,7 @@
       });
   </script>
 
-  <!-- 🔹 Barra info arriba de 'contacto' -->
+  <!-- Barra info arriba de 'contacto' -->
   <div class="barrainfo"></div>
 
   <!-- 📞 Contacto -->
@@ -112,7 +109,7 @@
       });
   </script>
 
-  <!-- 🧭 Footer -->
+  <!-- Footer -->
   <div id="footer"></div>
   <script>
     fetch('webs/footer.html')
@@ -127,15 +124,13 @@
       });
   </script>
 
-  <!-- 🔁 Cargar barrainfo en ambas instancias -->
+  <!--barrainfo en ambas instancias -->
   <script>
     document.querySelectorAll('.barrainfo').forEach(container => {
       fetch('webs/barrainfo.html')
         .then(res => res.text())
         .then(html => {
           container.innerHTML = html;
-
-          // Solo carga el CSS una vez
           if (!document.querySelector('link[href="CssResponsive/barrainforesponsive.css"]')) {
             const link = document.createElement("link");
             link.rel = "stylesheet";
@@ -143,13 +138,11 @@
             document.head.appendChild(link);
           }
 
-          // Si no necesitás animaciones, podés comentar esto
-          // activarAnimaciones();
+         activarAnimaciones();
         });
     });
   </script>
 
-  <!-- 📜 Scripts generales -->
   <script src="scripts/script.js"></script>
   <script src="scripts/modal-services.js"></script>
 

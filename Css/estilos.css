@@ -17,7 +17,6 @@
 
 @import url('footer.css');
 @import url('../CssResponsive/footerresponsive.css');
-/* 🎨 Paleta de colores */
 :root {
   --color-primario: #30496F;
   --color-secundario: #5B708D;
@@ -33,7 +32,6 @@
   --color-btn-hover: var(--color-secundario);
 }
 
-/* 🔄 Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +43,7 @@ body {
   background-color: var(--color-fondo-claro);
 }
 
-/* 🌐 Barra de navegación */
+/*Barra de navegación */
 .navbar {
   display: flex;
   align-items: center;
@@ -89,7 +87,7 @@ body {
   width: 50px;
 }
 
-/* 📱 Menú hamburguesa */
+/* Menú hamburguesa */
 .menu-toggle {
   font-size: 1.8rem;
   cursor: pointer;
@@ -103,56 +101,10 @@ body {
   transform: rotate(90deg);
 }
 
-/* 🖼️ Hero 
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--color-acento-calido);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.hero-img {
-  max-width: 480px;
-  width: 90%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.hero-text {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  color: #fff;
-  background: rgba(0,0,0,0.4);
-  padding: 1.5rem 2rem;
-  border-radius: 8px;
-  z-index: 2;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.hero-text p {
-  font-size: 1.4rem;
-  font-style: italic;
-} probanod uno nuevo*/
-
-/* 🖼️ Hero */
+/* Hero */
 .hero {
   width: 100%;
-  padding: 100px 2rem 60px 2rem;
+  padding: 60px 2rem 60px 2rem;
   background-color: var(--color-fondo-claro);
   display: flex;
   flex-direction: column;
@@ -193,7 +145,7 @@ body {
   background: var(--color-acento-calido);
 }
 
-/* 🧴 Servicios */
+/* Servicios */
 .services {
   padding: 3rem 1rem;
   background-color: var(--color-fondo-alt);
@@ -247,7 +199,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* 🎯 Botones */
+/*Botones */
 .btn {
   display: inline-block;
   padding: 0.6rem 1.2rem;
