@@ -1,12 +1,12 @@
-@media (max-width: 900px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .toxinas-galeria {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
   }
 
   .toxina-item h3 {
-    font-size: 0.95rem;
+    font-size: 1rem;
     padding: 10px;
   }
 

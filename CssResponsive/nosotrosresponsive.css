@@ -2,11 +2,12 @@
 @media (max-width: 1024px) {
   .nosotros {
     flex-direction: column;
-    padding-top: 0rem;
+    padding-top: 4rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     gap: 2rem;
     height: auto;
+    scroll-margin-top: 80px;
   }
 
   .nosotros-img img {

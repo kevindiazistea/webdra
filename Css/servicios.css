@@ -5,6 +5,8 @@
   gap: 24px;
   padding: 40px 20px;
   background-color: var(--color-fondo-claro);
+    max-width: 960px; /* Limita el ancho total */
+  margin: 0 auto;  
 }
 
 .toxina-item {
@@ -17,6 +19,7 @@
   transform: translateY(20px);
   animation: fadeInUp 0.6s ease forwards;
   animation-delay: var(--delay);
+  max-width: 100%;
 }
 
 .toxina-item:hover {
