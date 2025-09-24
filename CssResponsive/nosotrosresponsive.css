@@ -1,13 +1,34 @@
-/* 📱 Estilos para tablets */
-@media (max-width: 1024px) {
+/* 📱 Estilos para tablets grandes (1000px–1400px) */
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .nosotros {
+    padding-top: 6rem;
+    scroll-margin-top: 100px;
+    height: auto;
+    flex-direction: row;
+    gap: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .info-bar {
+    margin-bottom: 3rem;
+  }
+
+  .nosotros h2 {
+    margin-top: 2rem;
+  }
+}
+
+/* 📱 Estilos para tablets medianas (768px–1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
   .nosotros {
     flex-direction: column;
-    padding-top: 4rem;
+    padding-top: 5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     gap: 2rem;
     height: auto;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 100px;
   }
 
   .nosotros-img img {
@@ -38,13 +59,15 @@
   }
 }
 
-/* 📱 Estilos para celulares */
-@media (max-width: 768px) {
+/* 📱 Estilos para celulares (hasta 767px) */
+@media (max-width: 767px) {
   .nosotros {
-    padding-top: 0rem;
+    flex-direction: column;
+    padding-top: 4rem;
     padding-left: 1rem;
     padding-right: 1rem;
     gap: 1.5rem;
+    scroll-margin-top: 80px;
   }
 
   .nosotros-texto h2 {
