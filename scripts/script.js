@@ -1,4 +1,4 @@
-/*document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav-links');
 
@@ -39,8 +39,8 @@ document.addEventListener('click', function (e) {
     navLinks.classList.remove('active');
     toggle.classList.remove('open');
   }
-});*/
-
+});
+/*
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav-links');
@@ -99,4 +99,4 @@ function activarAnimaciones() {
   document.querySelectorAll('.animate-left, .animate-right, .animate-fade').forEach(el => {
     observer.observe(el);
   });
-}
+}*/
