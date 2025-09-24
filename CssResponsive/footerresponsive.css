@@ -18,7 +18,7 @@
   }
 
   .footer-social {
-    flex-direction: column;
+    flex-direction: row;/*columns*/
     gap: 12px;
     align-items: center;
   }
