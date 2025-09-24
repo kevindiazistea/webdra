@@ -4,7 +4,7 @@ html, body {
 }
 
 /* 📱 Navbar */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .navbar {
     flex-direction: row;
     justify-content: space-between;
@@ -13,26 +13,23 @@ html, body {
     position: relative;
   }
 
+  .navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .logo {
     margin-left: 0;
   }
 
-  .navbar-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
   .menu-toggle {
     display: block;
     position: static;
-    top: 1rem;
-    right: 1.5rem;
-    z-index: 1001;
     font-size: 1.8rem;
     cursor: pointer;
-
+    z-index: 1001;
   }
 
   .nav-links {
@@ -61,7 +58,10 @@ html, body {
     font-size: 1rem;
     padding: 0.5rem 0;
   }
+}
+
 /* 🖼️ Hero */
+@media (max-width: 768px) {
   .hero {
     flex-direction: column;
     height: auto;
@@ -92,8 +92,10 @@ html, body {
   .hero-text p {
     font-size: 1.1rem;
   }
-  
+}
+
 /* 📱 Nosotros */
+@media (max-width: 768px) {
   .nosotros {
     flex-direction: column;
     align-items: center;
@@ -137,19 +139,23 @@ html, body {
     opacity: 1;
     transition: none;
   }
-
-/* 📦 Espaciado entre secciones */
-section {
-  padding: 2rem 1rem;
-  scroll-margin-top: 80px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+/* 📦 Espaciado entre secciones */
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 1rem;
+    scroll-margin-top: 80px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* 🧴 Servicios */
+@media (max-width: 768px) {
   .service-grid {
     flex-direction: column;
     gap: 1.5rem;
@@ -160,19 +166,22 @@ img {
     max-width: 100%;
     margin: 0 auto;
   }
-
-
-/* 📞 Formularios */
-form {
-  padding: 1rem;
 }
 
-form button {
-  width: 100%;
-  font-size: 1rem;
+/* 📞 Formularios */
+@media (max-width: 768px) {
+  form {
+    padding: 1rem;
+  }
+
+  form button {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
 
 /* 🧭 Footer */
+@media (max-width: 768px) {
   .footer {
     flex-direction: column;
     text-align: center;
@@ -206,8 +215,8 @@ form button {
     height: 40px;
     padding: 8px;
   }
-
 }
+
 @media (max-width: 480px) {
   .footer h4 {
     font-size: 1rem;
@@ -229,4 +238,3 @@ form button {
     padding: 6px;
   }
 }
-
