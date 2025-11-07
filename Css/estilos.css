@@ -56,14 +56,15 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.logo img {
-  height: 70px;
-  filter: drop-shadow(0 0 4px rgba(255,255,255,0.3));
-}
+.logo img { 
+  height: 120px;
+  filter: drop-shadow(0 0 4px rgba(255,255,255,0.3)); 
+} 
 
-.logo {
-  margin-left: 15rem;
-}
+.logo { 
+  margin-left: 15rem; 
+  display: flex; 
+  align-items: center; }
 
 .nav-links {
   display: flex;

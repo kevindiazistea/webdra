@@ -19,6 +19,17 @@
   }
 }
 
+/* 0711 revisar despues como quedaria
+.nosotros-img {
+  max-width: 450px;
+}
+
+.nosotros-img img {
+  max-height: 80vh; o puede ir 70
+  object-fit: cover; o containt;
+}
+*/
+
 /* 📱 Estilos para tablets medianas (768px–1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .nosotros {
@@ -59,7 +70,12 @@
   }
 }
 
-/* 📱 Estilos para celulares (hasta 767px) */
+/* 📱 Estilos para celulares (hasta 767px) 
+.nosotros-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}*/
 @media (max-width: 767px) {
   .nosotros {
     flex-direction: column;
