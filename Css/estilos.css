@@ -32,15 +32,52 @@
   --color-btn-hover: var(--color-secundario);
 }
 
+@font-face {
+  font-family: 'Schrifted Serif';
+  src: url('fonts/SchriftedSerif.woff2') format('woff2'),
+       url('fonts/SchriftedSerif.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aston Script';
+  src: url('fonts/AstonScript.woff2') format('woff2'),
+       url('fonts/AstonScript.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('fonts/Nexa.woff2') format('woff2'),
+       url('fonts/Nexa.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/*
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--color-fondo-claro);
+}*/
+
+body {
+  font-family: 'Nexa', sans-serif;
+  background-color: var(--color-fondo-claro);
+}
+
+h1, h2, h3 {
+  font-family: 'Schrifted Serif', serif;
+}
+
+.logo-text, .hero-text h1 {
+  font-family: 'Aston Script', cursive;
 }
 
 /*Barra de navegación */
@@ -145,7 +182,7 @@ body {
 
 .hero-text p {
   font-size: 1.2rem;
-  font-style: italic;
+ /* font-style: italic;*/
   color: var(--color-secundario);
 }
 
@@ -164,7 +201,7 @@ body {
 .services h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #6a1b9a;
+  /*color: #6a1b9a;*/
 }
 
 .service-grid {
