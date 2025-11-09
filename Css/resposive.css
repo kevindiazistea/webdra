@@ -20,10 +20,23 @@ html, body {
     width: 100%;
   }
 
-  .logo {
+  /*.logo {
     margin-left: 0;
-  }
+  }*/
+  
+  .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  flex: 1;
+}
 
+.logo img {
+  max-height: 90px;
+  height: auto;
+  display: block;
+}
   .menu-toggle {
     display: block;
     position: static;

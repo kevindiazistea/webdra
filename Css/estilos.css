@@ -61,10 +61,18 @@ body {
   filter: drop-shadow(0 0 4px rgba(255,255,255,0.3)); 
 } 
 
-.logo { 
+/*.logo { 
   margin-left: 15rem; 
   display: flex; 
-  align-items: center; }
+  align-items: center; 
+}*/
+.logo {
+  margin-left: 0;
+  padding-left: 2rem; /* o 2rem si querés más aire */
+  display: flex;
+  align-items: center;
+}
+
 
 .nav-links {
   display: flex;
