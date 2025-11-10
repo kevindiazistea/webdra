@@ -22,7 +22,7 @@
 
 .contacto-subtitulo {
   font-size: 1.2rem;
-  color: #666;
+  color: var(--color-secundario);
   margin-bottom: 6px;
 }
 
