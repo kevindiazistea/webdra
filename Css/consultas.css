@@ -1,7 +1,7 @@
 /* 🧠 Contenedor general */
 .faq-wrapper {
   padding: 40px 20px;
-  font-family: 'Segoe UI', sans-serif;
+  /*font-family: 'Segoe UI', sans-serif;*/
   background-color: var(--color-fondo-claro);
 }
 
@@ -18,7 +18,7 @@
 
 .faq-subtitle {
   font-size: 1.2rem;
-  color: var(--color-texto-suave);
+  color: var(--color-secundario);
   font-weight: 400;
   text-align: center;
   max-width: 600px;
@@ -38,7 +38,7 @@
 /* 📋 Cada bloque de preguntas */
 .faq-column h3 {
   font-size: 1.6rem;
-  color: var(--color-secundario);
+  color: var(--color-primario);
   text-align: center;
   margin-bottom: 20px;
   font-weight: 600;

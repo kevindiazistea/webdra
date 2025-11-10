@@ -36,7 +36,7 @@
   color: var(--color-primario);
 }
 
-.nosotros-texto h2 {
+.nosotros-texto h1 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -45,14 +45,14 @@
 
 .nosotros-texto h3 {
   font-size: 1.3rem;
-  color: var(--color-acento-frio); /* mantiene el acento emocional */
+  color: var(--color-primario); /* mantiene el acento emocional */
   margin-bottom: 1rem;
 }
 
 .nosotros-texto p {
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--color-texto-suave);
+  color: var(--color-secundario);
 }
 
 .info-bar {

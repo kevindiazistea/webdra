@@ -5,7 +5,7 @@
   gap: 24px;
   padding: 40px 20px;
   background-color: var(--color-fondo-claro);
-    max-width: 960px; /* Limita el ancho total */
+  max-width: 960px; 
   margin: 0 auto;  
 }
 .toxina-item {
@@ -152,6 +152,21 @@
   color: var(--color-texto-suave);
   text-align: center;
   flex-shrink: 0;
+}
+
+.modal-content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-primario); /* Título */
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.modal-content p {
+  font-size: 0.95rem;
+  color: var(--color-secundario); /* Descripción */
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
 }
 
 /* Animaciones */
