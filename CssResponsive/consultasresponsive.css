@@ -11,7 +11,7 @@
 
   .faq-subtitle {
     font-size: 1rem;
-  color: var(--color-secundario);
+    color: var(--color-secundario);
     padding: 0 1rem;
     text-align: center;
   }

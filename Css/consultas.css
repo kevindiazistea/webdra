@@ -102,7 +102,7 @@ details p,
 details ul {
   margin-top: 10px;
   font-size: 0.95rem;
-  color: #333;
+  color: var(--color-secundario);
   line-height: 1.6;
 }
 
